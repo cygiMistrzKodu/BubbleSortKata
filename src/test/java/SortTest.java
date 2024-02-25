@@ -10,12 +10,12 @@ public class SortTest {
 
     @Test
     public void sorted() {
-        assertEquals(asList(), sort(asList()));
+        assertEquals(asList(1), sort(asList(1)));
 
 
     }
 
     private List<Integer> sort(List<Integer> list) {
-        return new ArrayList<>();
+        return list;
     }
 }
