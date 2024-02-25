@@ -10,7 +10,7 @@ public class SortTest {
 
     @Test
     public void sorted() {
-        assertEquals(asList(1), sort(asList(1)));
+        assertEquals(asList(1, 2), sort(asList(1, 2)));
 
 
     }
