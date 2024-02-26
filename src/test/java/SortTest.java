@@ -26,17 +26,20 @@ public class SortTest {
 
         if (list.size() > 1) {
 
-            for (int firstIndex = 0; firstIndex < list.size() - 1; firstIndex++) {
+            for (int limit = list.size() - 1; limit > 0; limit--) {
 
-                int secondIndex = firstIndex + 1;
+                for (int firstIndex = 0; firstIndex < list.size() - 1; firstIndex++) {
 
-                if (list.get(firstIndex) > list.get(secondIndex)) {
-                    int first = list.get(firstIndex);
-                    int second = list.get(secondIndex);
-                    list.set(firstIndex, second);
-                    list.set(secondIndex, first);
+                    int secondIndex = firstIndex + 1;
+
+                    if (list.get(firstIndex) > list.get(secondIndex)) {
+                        int first = list.get(firstIndex);
+                        int second = list.get(secondIndex);
+                        list.set(firstIndex, second);
+                        list.set(secondIndex, first);
+                    }
+
                 }
-
             }
 
 
